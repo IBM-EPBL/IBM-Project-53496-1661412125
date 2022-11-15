@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg,#2980b9,#8e44ad);
+      height: 100vh;
+      overflow: hidden;
+}
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  padding: 0 40px;
+}
+h2{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 40px;
+  border:  1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}
+  </style>
+  </head>
+<body>
+
+<form action="/y_predict">
+ <h2>Please fill the details of your car:</h2>
+ Reg Year:<input type="number"><br><br>
+  
+ Reg Month:<input type="number"><br><br>
+ 
+ Power of Car in PS:<input type="number"><br><br>
+
+ Kilometer the car has to driven:<input type="number" "style = font-color : white"><br><br>S
+
+ 
+ Expected Budget:<input type="text"><br><br>
+  
+Gear Box Type  :
+  Manual:<input type="radio" value="Manual">
+
+  Automatic:<input type="radio" value="Automatic">
+
+  Not-declared:<input type="radio"  value="Not-declared"><br><br>
+
+  
+Your car is damaged or Repaired:
+  Yes:<input type="radio" value="Yes">
+
+  No:<input type="radio" value="No">
+
+  Not-declared:<input type="radio"  value="Not-declared"><br><br>
+  
+  Model Type:<input type="text"><br><br>
+
+  Brand of the car:<input type="text"><br><br>
+
+  Fuel Type  :
+  cng:<input type="radio" value="cng">
+
+  Petrol:<input type="radio" value="Petrol">
+
+  Diesel:<input type="radio" value="Diesel"><br><br>
+
+  Vehicle Type:<input type="text"><br><br>
+
+  <input type="submit" value="Predict">
+
+ <p><b>The resale value  predicted is 3345678.00$</b></p>
+ 
+</form> 
+
+
+
+</body>
+</html>
